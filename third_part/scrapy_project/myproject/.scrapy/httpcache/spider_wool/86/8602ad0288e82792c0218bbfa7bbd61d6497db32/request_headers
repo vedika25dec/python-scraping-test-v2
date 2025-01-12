@@ -1,0 +1,5 @@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/2.8.0 (+https://scrapy.org)
+Cookie: akaalb_woolworths.com.au=~op=www_woolworths_com_au_ZoneB:PROD-ZoneB|~rv=70~m=PROD-ZoneB:0|~os=43eb3391333cc20efbd7f812851447e6~id=a9df4f1aa5367e1564af030955216add; AKA_A2=A
+Accept-Encoding: gzip, deflate

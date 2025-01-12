@@ -1,0 +1,22 @@
+# HOW TO TEST THE CODE
+
+# IMPORT LIBRARIES
+
+import pytest
+
+# IMPORT CUSTOM LIBRARY 
+from src import longest_sequence,is_grandma_list  # Import your function
+
+# TESTING WITH INPUT KEYWORDS PASSED TO
+ function which is imported and 
+ check whether the return statement matched with the given statement
+
+def test_longest_sequence_basic():
+    keywords = ['milk', 'catalog', 'c+', 'python', 'cat','dog1','dog2','dog3','python2','python5','pyth','dataman','datamanger','dataanalyst']
+    result = longest_sequence(keywords)
+    assert result == 'pyth'  
+
+# How to run the code
+
+#test script name 
+pytest test_src.py

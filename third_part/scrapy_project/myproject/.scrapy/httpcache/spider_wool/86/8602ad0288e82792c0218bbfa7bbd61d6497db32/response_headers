@@ -1,0 +1,19 @@
+Content-Type: text/html; charset=utf-8
+Etag: W/"915d1-juNQMD0jiGYv7zVP2o9eZe4boIE"
+Request-Context: appId=cid-v1:46e2bb91-2f2b-4bf7-bb78-dc90b57dbad7
+X-Powered-By: Express
+Ssr: true
+Link: <https://cdn1.woolworths.media/content/content/icon-header-logo.png>;rel="preload";as="image";type="image/png";crossorigin,<https://cdn1.woolworths.media>;rel="preconnect"
+X-Akamai-Transformed: 9 - 0 pmb=mTOE,1mRUM,2
+Content-Encoding: gzip
+Date: Thu, 09 Jan 2025 18:08:21 GMT
+Vary: Accept-Encoding
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=10001
+Server-Timing: ak_p; desc="1736446091154_399795069_2108974933_1000071_236872_68_160_-";dur=1
+Set-Cookie: akaalb_woolworths.com.au=~op=www_woolworths_com_au_BFF_MEL_Launch:WOW-BFF-MEL|www_woolworths_com_au_ZoneB:PROD-ZoneB|~rv=70~m=WOW-BFF-MEL:0|PROD-ZoneB:0|~os=43eb3391333cc20efbd7f812851447e6~id=dfa212fcb8e80df095df26238763ee2a; path=/; HttpOnly; Secure; SameSite=None
+Set-Cookie: _abck=44F5BA61FAED30B3E921E35CEA8F85F2~-1~YAAQfWPUFzPV4LWTAQAAO8hATA2wvkJLezVZAIwa1bf7ko/+LwYFUBzSVZ7Vje7FWSFAn8xngE/uw16OsyiXyLHMMJtbZL3DVNlgc+u1m6Arav7lSehD7D/EQ9MzFpJdxBQXz3BWYgDvvgOjwVCs1Gv49Y6ndsn3fFBxMpyQPvywbVHz+Wqv5eYRTurblMoFQPz5exifZ7H+GHLLz+MD/RqsXBM1ERjmFW0qQOP1yBW6yHDmu1CL/VMgt/nuzN/CZf57XneCJDsujP45Ij+14eqzrjMUTdRVTX7ggPrEg5NBdsPj5lskP8m7iP6Tngsxl+z++InbqIxIasvXj2yaRG+7TYzAk5WI84liNPFsR3Z2cKsbLAXTxEVoW2tHwTLTTwiIpbMwITML/lasM74xPSjJ4/hz1PABwgi5lNfofIlz~-1~-1~-1; Domain=.woolworths.com.au; Path=/; Expires=Fri, 09 Jan 2026 18:08:21 GMT; Max-Age=31536000; Secure
+Set-Cookie: bm_sz=40C113FEF19B026566911004819E5AF1~YAAQfWPUFzTV4LWTAQAAO8hATBpKh5xL/NKAqP0FspUaMmnETJh7GEzP7kXbqa1B+MsrA29Vlh4MQmtNf7CogUHhJ+wgvyhW5ohru97TPI8De/sZOWnU3glWT6FT9lxkXkWEgeK9lNyzcwBMK2oe3fh1K+SKvGyhcfe/0y3HH/ZXlcMfHQP5cwXlE3p5MKIL/rI3NVgOi6eWirLOXDU8FncvHLhJWC9wo650/d6uKBogQFqAKfE3kDKtKkI5ctJ6prbZKdyjltxSCn/Vl7OzyU9rANQyrmIMQ/725SyYJtX3SzNj+yCMaVg53q9oPZYjcoWCS8KUzGXyZ/yK+bjK/7x9Zx/eoSXb57NfXlG3V3OUoXhegupfuoCMkYkvuMbKpOgr+pdsLmERNQ==~3490369~4473139; Domain=.woolworths.com.au; Path=/; Expires=Thu, 09 Jan 2025 22:08:11 GMT; Max-Age=14390
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains

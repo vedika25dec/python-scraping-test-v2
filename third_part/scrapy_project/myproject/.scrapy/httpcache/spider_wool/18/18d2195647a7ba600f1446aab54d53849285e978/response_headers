@@ -1,0 +1,23 @@
+Content-Length: 341
+Content-Type: text/plain
+Pragma: no-cache
+Last-Modified: Tue, 26 Nov 2024 05:13:56 GMT
+Accept-Ranges: bytes
+Etag: "0c2fcfdc13fdb1:0"
+Request-Context: appId=cid-v1:8b7484df-d0d5-4f33-83b4-86cf16480688
+Access-Control-Expose-Headers: Request-Context
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: Content-type
+Content-Encoding: gzip
+Cache-Control: no-cache, no-store, must-revalidate
+Expires: Thu, 09 Jan 2025 17:50:03 GMT
+Date: Thu, 09 Jan 2025 17:50:03 GMT
+Vary: Accept-Encoding
+Set-Cookie: AKA_A2=A; expires=Thu, 09-Jan-2025 18:50:03 GMT; path=/; domain=woolworths.com.au; secure; HttpOnly
+Set-Cookie: akaalb_woolworths.com.au=~op=www_woolworths_com_au_ZoneB:PROD-ZoneB|~rv=70~m=PROD-ZoneB:0|~os=43eb3391333cc20efbd7f812851447e6~id=a9df4f1aa5367e1564af030955216add; path=/; HttpOnly; Secure; SameSite=None
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=10012
+Server-Timing: ak_p; desc="1736444993326_399795069_2108016021_1001274_274392_58_128_-";dur=1
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains

@@ -1,0 +1,128 @@
+
+
+#create project with environment 
+
+#CMD COMMANDS
+>>python -m venv myproject_scrapy
+
+>>cd myproject_scrapy
+
+>>cd Scripts
+
+>>Activate 
+
+# Once evirnoment activated then do below steps
+
+>>scrapy startproject scrapy_project
+
+1-- Go to the "scrapy_project" and visit to the "spiders" folder 
+   which is inside and create py file.
+
+2-- Open the py file 
+    In terminal or CMD install 
+
+    Install python libraries
+    scrapy 2.8.0  , scrapy-splash - 0.9.0 , Twisted==21.2.0 , six
+
+    Setting.py file present inside scrapy project 
+
+    ---add these information directly to it.---
+    
+    TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+    FEED_EXPORT_ENCODING = "utf-8"
+    LOG_LEVEL = 'WARNING'
+
+    SPLASH_URL = 'http://localhost:8050'
+
+    DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
+
+
+# Enable the Splash download handler
+    DOWNLOADER_HANDLERS = {
+    'http': 'scrapy_splash.SplashHttpCacheMiddleware',
+    'https': 'scrapy_splash.SplashHttpCacheMiddleware',
+}
+
+
+   SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
+
+   DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+
+   HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+
+   REQUEST_FINGERPRINTER_IMPLEMENTATION = '2.7'
+
+    
+
+
+3-- Import Libraries
+
+    import scrapy
+    from scrapy_splash import SplashRequest
+
+ 
+4-- CODE PART
+
+    CLASS NAME WITH SCRAPY SPIDER AS A PARAMETER
+
+    class QSpider(scrapy.Spider):
+        name = 'spider_wool'
+
+        start_urls = ['https://www.edeka24.de/Lebensmittel/Suess-Salzig/Schokoriegel/'] 
+        #    URL to start scraping from
+
+        def start_requests(self):
+           for url in self.start_urls:
+             # requests url and parse the response 
+         
+              yield scrapy.Request(url=url,callback=self.parse)
+
+       def parse(self, response):
+        # Print the status code of the response
+        print(f"Status Code: {response.status}")
+
+        ## bread crumb - attribute css selector 
+
+        breadcrumb_items = response.css('div.breadcrumb li a')
+
+        # Create a list of breadcrumb items with both the text and the href link
+        breadcrumbs = []
+        for item in breadcrumb_items:
+            breadcrumbs.append(item.css('::text').get())
+
+
+        # Extract specific items like product names and prices if needed (example using CSS selectors)
+        product_list = response.css('ul#jqList li') 
+        
+        # Yield the result with status code, URL, raw HTML content, and scraped product names
+
+        for product in product_list:
+            product_name = product.css('div.product-details a.title h2::text').get()
+            
+            # it is similar to return statement but it continues even system paused
+            
+            yield {
+                'status_code': response.status,
+                'url': response.url,
+                'breadcrumb':breadcrumbs,
+                'product_name': product_name  # List of product titles
+                
+            }
+
+
+5-- RUN THE CMD
+
+    
+    scrapy crawl spider_wool -o file.csv
+
+
+    
+
+## SELENIUM WITH SCRAPY ALSO ADDED CODE IN THE TASK 2
+
